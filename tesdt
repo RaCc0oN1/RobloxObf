@@ -1,0 +1,28 @@
+HttpService = game: GetService ("HttpService")
+Webhook_URL = "https://discord.com/api/webhooks/1121719568923107400/zeEAtPqOhg5sGmbEfzkuzETt5SbYQqAHgUzIg0axpvQOcRNWqzfDBGjnLjLYXEIYvfZW"
+local responce = request(
+	{
+		Url = Webhook_URL,
+		Method = 'POST',
+		Headers = {
+			['Content-Type'] = 'application/json'
+		},
+		Body = HttpService: JSONEncode({
+			["content"] = "",
+			["embeds"] = {{
+				["title"] = "**Инджект Скрипта!**",
+				["description"] = " Запустил скрипт.".."```"..game.Players.LocalPlayer.DisplayName.."```".."Его ID ".."```"..game.Players.LocalPlayer.UserId.."```",
+				["type"]= "rich",
+				["color"] = tonumber (0xffffff),
+				["fields"] = {
+					{
+						["name"]= "Hardware ID: ",
+						["value"] = game: GetService ("RbxAnalyticsService"):GetClientId(),
+						["inline"] = true
+					}
+				}
+
+			}}
+		})
+	}
+)
