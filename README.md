@@ -34,11 +34,25 @@ Tab:Button{
 
 ### Toggles
 ```lua
+local NAME
 Tab:Toggle{
 	Name = "Toggle",
 	StartingState = false,
 	Description = nil,
-	Callback = function(state) end
+	Callback = function(state)
+ 		if state then
+			NAME = true
+		else
+			NAME = false
+		end
+  		while NAME do
+			if NAME then
+   
+			else
+				break
+			end
+		end
+ 	end
 }
 ```
 
