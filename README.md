@@ -77,16 +77,19 @@ local MyDropdown = Tab:Dropdown{
 	},
 	Callback = function(item) return end
 }
-
+```
+```
 MyDropdown:AddItems({
 	{"NewItem", 12},		-- {name, value}
 	400				-- or just value, which is also automatically taken as name
 })
-
+```
+```
 MyDropdown:RemoveItems({
 	"NewItem", "Hello"		-- just the names to get removed (upper/lower case ignored)
 })
-
+```
+```
 MyDropdown:Clear()
 ```
 
