@@ -346,6 +346,11 @@ local function MakeUi(applicationName, name, info, discordInvite)
 	   	end
 	   	
    		local CurrentKeyInput = ""
+		if isfolder("/RaCc0oNHub") then
+			--Kek
+		else
+		    makefolder("RaCc0oNHub")
+		end
 	    local SavedKeyPath = "/RaCc0oNHub/RaCc0oNHubK.txt"
 	    local function iskeyvalid(key_input)
 	        if key_input ~= nil then CurrentKeyInput = key_input end
