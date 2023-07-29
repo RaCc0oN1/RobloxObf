@@ -448,3 +448,35 @@ function KeySystemUI.New(settings)
 end
 
 return KeySystemUI
+
+ismobile = game:GetService("UserInputService").TouchEnabled
+if ismobile then
+local input = loadstring(game:HttpGet('https://pastebin.com/raw/dYzQv3d8'))()
+local RaCc0oNScrGUI = Instance.new("ScreenGui")
+local RaCc0oNImg = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+
+
+RaCc0oNScrGUI.Name = "RaCc0oNScrGUI"
+RaCc0oNScrGUI.Parent = game.CoreGui
+RaCc0oNScrGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+RaCc0oNImg.Name = "RaCc0oNImg"
+RaCc0oNImg.Parent = RaCc0oNScrGUI
+RaCc0oNImg.BackgroundColor3 = Color3.fromRGB(67, 62, 132)
+RaCc0oNImg.BackgroundTransparency = 1.000
+RaCc0oNImg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RaCc0oNImg.BorderSizePixel = 0
+RaCc0oNImg.Size = UDim2.new(0, 50, 0, 50)
+RaCc0oNImg.Image = "rbxassetid://3821457207"
+RaCc0oNImg.Draggable = true
+RaCc0oNImg.Selectable = true
+RaCc0oNImg.Active = true
+
+UICorner.CornerRadius = UDim.new(0, 100)
+UICorner.Parent = RaCc0oNImg
+
+RaCc0oNImg.MouseButton1Up:Connect(function()
+    input.press(Enum.KeyCode.Delete)
+end)
+end
