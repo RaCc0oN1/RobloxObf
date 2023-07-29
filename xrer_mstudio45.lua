@@ -18,6 +18,8 @@
             end
 --]]
 
+
+
 local KeySystemUI = { Closed = false }
 local UIMade = false;
 
@@ -447,8 +449,6 @@ function KeySystemUI.New(settings)
     MakeUi(settings.ApplicationName, settings.Name, settings.Info, settings.DiscordInvite)
 end
 
-return KeySystemUI
-
 ismobile = game:GetService("UserInputService").TouchEnabled
 if ismobile then
 local input = loadstring(game:HttpGet('https://pastebin.com/raw/dYzQv3d8'))()
@@ -480,3 +480,6 @@ RaCc0oNImg.MouseButton1Up:Connect(function()
     input.press(Enum.KeyCode.Delete)
 end)
 end
+
+
+return KeySystemUI
