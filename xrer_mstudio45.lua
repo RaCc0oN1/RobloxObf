@@ -403,7 +403,32 @@ local function MakeUi(applicationName, name, info, discordInvite)
 	    end)
 	
 	    get_key.MouseButton1Click:Connect(function()
-	        text_box.Text = KeySystem:getKeyURL()
+	        local str = tostring(game:GetService("RbxAnalyticsService"):GetClientId())
+                str = str:gsub("-", "")
+                print(str)
+                local GetKeyLinkHereGUI = Instance.new("ScreenGui")
+                local GetKeyLinkHere = Instance.new("TextBox")
+                GetKeyLinkHereGUI.Name = "GetKeyLinkHereGUI"
+                GetKeyLinkHereGUI.Parent = game.CoreGui
+                GetKeyLinkHereGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+                GetKeyLinkHere.Name = "GetKeyLinkHere"
+                GetKeyLinkHere.Parent = GetKeyLinkHereGUI
+                GetKeyLinkHere.BackgroundColor3 = Color3.fromRGB(49, 44, 57)
+                GetKeyLinkHere.BorderColor3 = Color3.fromRGB(125, 113, 148)
+                GetKeyLinkHere.BorderSizePixel = 3
+                GetKeyLinkHere.Position = UDim2.new(0.300386369, 0, 0.302989125, 0)
+                GetKeyLinkHere.Size = UDim2.new(0.399227291, 0, 0.0849184766, 0)
+                GetKeyLinkHere.Font = Enum.Font.SourceSans
+                GetKeyLinkHere.Text = "https://kys.rblxscripts.fun/getkey/RaCc0oNHub?hwid=" .. str
+                GetKeyLinkHere.TextColor3 = Color3.fromRGB(255, 255, 255)
+                GetKeyLinkHere.TextScaled = true
+                GetKeyLinkHere.TextSize = 14.000
+                GetKeyLinkHere.TextStrokeColor3 = Color3.fromRGB(0, 85, 24)
+                GetKeyLinkHere.TextStrokeTransparency = 0.000
+                GetKeyLinkHere.TextWrapped = true
+                GetKeyLinkHere.ClearTextOnFocus = false
+                wait(3)
+                GetKeyLinkHereGUI:Destroy()
 	        KeySystem:copyGetKeyURL()
 	    end)
    	end
