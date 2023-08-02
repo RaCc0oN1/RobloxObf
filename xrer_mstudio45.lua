@@ -120,7 +120,7 @@ end
 -- License: https://api-sirclub.onrender.com/scripts/raw/license
 local Notif = loadstring(game:HttpGet("https://api-sirclub.onrender.com/scripts/raw/notifybottom.lua"))()
 
--- Main Function
+-- Main Function 
 local function MakeUi(applicationName, name, info, discordInvite)
     if UIMade == true then return end
     UIMade = true
