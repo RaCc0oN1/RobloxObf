@@ -41,7 +41,7 @@ Tab:Button{
             Description = nil,
             Callback = function(state)
                 NAME = state
-                while NAME do
+                while NAME do task.wait(.05)
                     
                 end
             end
