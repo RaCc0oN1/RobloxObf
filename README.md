@@ -40,17 +40,9 @@ Tab:Button{
             StartingState = false,
             Description = nil,
             Callback = function(state)
-                if state then
-                    NAME = true
-                else
-                    NAME = false
-                end
+                NAME = state
                 while NAME do
-                    if NAME then
-        
-                    else
-                        break
-                    end
+                    
                 end
             end
         }
