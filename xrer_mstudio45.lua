@@ -421,7 +421,7 @@ local function MakeUi(applicationName, name, info, discordInvite)
                 GetKeyLinkHere.Position = UDim2.new(0.300386369, 0, 0.302989125, 0)
                 GetKeyLinkHere.Size = UDim2.new(0.399227291, 0, 0.0849184766, 0)
                 GetKeyLinkHere.Font = Enum.Font.SourceSans
-                GetKeyLinkHere.Text = "https://kys.rblxscripts.fun/getkey/RaCc0oNHub?hwid=" .. str
+                GetKeyLinkHere.Text = "https://keyrblx.com/getkey/RaCc0oNHub?hwid=" .. str
                 GetKeyLinkHere.TextColor3 = Color3.fromRGB(255, 255, 255)
                 GetKeyLinkHere.TextScaled = true
                 GetKeyLinkHere.TextSize = 14.000
