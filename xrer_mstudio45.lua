@@ -429,7 +429,7 @@ local function MakeUi(applicationName, name, info, discordInvite)
                 GetKeyLinkHere.TextStrokeTransparency = 0.000
                 GetKeyLinkHere.TextWrapped = true
                 GetKeyLinkHere.ClearTextOnFocus = false
-                wait(3)
+                wait(10)
                 GetKeyLinkHereGUI:Destroy()
 	        KeySystem:copyGetKeyURL()
 	    end)
