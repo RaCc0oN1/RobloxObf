@@ -25,7 +25,9 @@ RaCc0oNImg.Active = true
 UICorner.CornerRadius = UDim.new(0, 100)
 UICorner.Parent = RaCc0oNImg
 
-RaCc0oNImg.MouseButton1Click:Connect(function()
-    input.press(Enum.KeyCode.Delete)
+RaCc0oNImg.InputBegan:Connect(function(input)
+    	if input.UserInputType == Enum.UserInputType.Touch or input.UserInputType == Enum.UserInputType.MouseButton1 then
+        input.press(Enum.KeyCode.Delete)
+    end
 end)
 end
