@@ -27,6 +27,5 @@ UICorner.Parent = RaCc0oNImg
 
 RaCc0oNImg.MouseButton1Click:Connect(function()
     input.press(Enum.KeyCode.Delete)
-print("test")
 end)
 end
