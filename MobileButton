@@ -25,7 +25,7 @@ RaCc0oNImg.Active = true
 UICorner.CornerRadius = UDim.new(0, 100)
 UICorner.Parent = RaCc0oNImg
 
-RaCc0oNImg.Touch:Connect(function()
+RaCc0oNImg.TouchTap:Connect(function()
     input.press(Enum.KeyCode.Delete)
 end)
 end
